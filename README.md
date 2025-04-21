@@ -1,59 +1,49 @@
-# Portfolio
+# ⚡ Portfolio — Tristan Vigneron
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+![Deploy](https://arkalithe.github.io/PortfolioVigneronTristan/actions/workflows/deploy.yml/badge.svg)
+![GitHub Pages](https://img.shields.io/github/deployments/Arkalithe/PortfolioVigneronTristan/github-pages?label=pages&style=flat-square)
+![Angular](https://img.shields.io/badge/angular-19-red?logo=angular&style=flat-square)
+![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC--BY--NC%204.0-lightgrey.svg)
 
-## Development server
+Un portfolio personnel développé avec Angular 19, standalone components, et un style cyberpunk.  
+Design pensé pour une navigation smooth, une UX originale et un look techno-futuriste.  
+Fait entièrement en CSS sans aucun framework graphique.
 
-To start a local development server, run:
+## 🚀 Déploiement
 
-```bash
-ng serve
-```
+Ce projet est automatiquement déployé sur GitHub Pages depuis la branche `main` via GitHub Actions.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🔗 Accès au site :  
+🌐 [arkalithe.github.io/PortfolioVigneronTristan](https://arkalithe.github.io/PortfolioVigneronTristan/)
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🛠️ Tech Stack
 
-```bash
-ng generate component component-name
-```
+- Angular 19 Standalone
+- CSS only (no UI lib/framework)
+- GitHub Actions (CI/CD)
+- GitHub Pages
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+## 📂 Structure
 
 ```bash
-ng build
+src/
+│
+├── app/
+│   ├── components/
+│   └── pages/
+│  
+└── assets/
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Contact :
 
-## Running unit tests
+- 📬 Email : [tristan.vigneron@email.com](mailto:tristan.vigneron@email.com)
+- 💼 LinkedIn : [linkedin.com/in/tristanvigneron](https://www.linkedin.com/in/tristanvigneron)
+- 💻 GitHub : [github.com/Arkalithe](https://github.com/Arkalithe)
+- 
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+> © Tristan Vigneron — 2025  
+> Licence : [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)  
+> Usage personnel autorisé — usage commercial interdit sans autorisation.
