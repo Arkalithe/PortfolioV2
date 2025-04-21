@@ -1,0 +1,25 @@
+* {
+    /*outline: solid 1px black;*/
+    text-decoration: none;
+    list-style: none    ;
+    padding: 0;
+    margin: 0;
+}
+body, main {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Share Tech Mono', monospace;
+    scroll-behavior: smooth;
+}
+main {
+    height: fit-content;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Audiowide', cursive;
+    color: var(--color-violet);
+    text-shadow: 0 0 10px var(--color-violet);
+}
+
+

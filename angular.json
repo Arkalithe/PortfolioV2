@@ -5,7 +5,10 @@
   "projects": {
     "portfolio": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+        "standalone": true
+      }},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -89,6 +92,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

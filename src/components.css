@@ -1,0 +1,14 @@
+a, button {
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--color-green);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-shadow: 0 0 4px var(--color-green);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover, button:hover {
+    color: var(--color-cyan);
+    text-shadow: 0 0 8px var(--color-cyan);
+}
