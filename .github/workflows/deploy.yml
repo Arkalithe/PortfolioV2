@@ -28,8 +28,11 @@ jobs:
       - name: Build project
         run: npm run build -- --configuration production --base-href=/PortfolioVigneronTristan/
 
+      - name: Create .nojekyll
+        run: echo "" > dist/portfolio/browser/.nojekyll
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/portfolio
+          folder: dist/portfolio/browser
