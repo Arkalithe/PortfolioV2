@@ -3,10 +3,6 @@
     top: 0;
     left: 0;
     right: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: rgba(15, 15, 15, 0.9);
     backdrop-filter: blur(10px);
     z-index: 100;
     border-bottom: 1px solid var(--color-violet);
@@ -14,25 +10,3 @@
     transition: all 0.3s ease-in-out;
 }
 
-:host(.horizontal) .logo {
-    font-size: 1.4rem;
-    color: var(--color-violet);
-    text-shadow: 0 0 6px var(--color-violet);
-}
-
-:host(.horizontal) .nav-links {
-    display: flex;
-    gap: 1.5rem;
-}
-
-:host(.horizontal) .nav-links a {
-    color: var(--color-green);
-    text-shadow: 0 0 5px var(--color-green);
-    transition: color 0.3s, text-shadow 0.3s;
-    font-weight: bold;
-}
-
-:host(.horizontal) .nav-links a:hover {
-    color: var(--color-cyan);
-    text-shadow: 0 0 8px var(--color-cyan);
-}

@@ -1,6 +1,6 @@
 # ⚡ Portfolio — Tristan Vigneron
 
-![Deploy](https://arkalithe.github.io/PortfolioVigneronTristan/actions/workflows/deploy.yml/badge.svg)
+[![Deploy](https://github.com/Arkalithe/PortfolioVigneronTristan/actions/workflows/deploy.yml/badge.svg)](https://github.com/Arkalithe/PortfolioVigneronTristan/actions/workflows/deploy.yml)
 ![GitHub Pages](https://img.shields.io/github/deployments/Arkalithe/PortfolioVigneronTristan/github-pages?label=pages&style=flat-square)
 ![Angular](https://img.shields.io/badge/angular-19-red?logo=angular&style=flat-square)
 ![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC--BY--NC%204.0-lightgrey.svg)
@@ -13,8 +13,7 @@ Fait entièrement en CSS sans aucun framework graphique.
 
 Ce projet est automatiquement déployé sur GitHub Pages depuis la branche `main` via GitHub Actions.
 
-🔗 Accès au site :  
-🌐 [arkalithe.github.io/PortfolioVigneronTristan](https://arkalithe.github.io/PortfolioVigneronTristan/)
+🔗 Accès au site :  🌐 [arkalithe.github.io/PortfolioVigneronTristan](https://arkalithe.github.io/PortfolioVigneronTristan/)
 
 
 ## 🛠️ Tech Stack

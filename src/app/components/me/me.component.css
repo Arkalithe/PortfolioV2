@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     position: relative;
     overflow: hidden;
 }
@@ -14,7 +13,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 3px;
+    height: 5px;
     background-color: var(--color-cyan);
     animation: laser-scan 4s infinite linear;
     z-index: 10;
@@ -25,31 +24,30 @@
     background-position: center;
 }
 
-
 :host p {
-    font-size: 1.2rem;
+    font-size: var(--text-lg);
     color: var(--color-gold);
-    margin-bottom: 2rem;
 }
 
 .hero-name {
     font-size: 3rem;
     color: var(--color-violet);
     text-shadow: 0 0 10px var(--color-violet);
-    margin-bottom: 1rem;
+    margin-bottom: var(--padding-md);
     animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
 }
 
 .subtitle {
     font-size: 1.2rem;
     color: var(--color-gold);
-    margin-bottom: 2rem;
+    margin-bottom: var(--padding-md);
 }
 
 .cyber-tagline {
-    font-size: 1rem;
+    font-size: var(--text-md);
     color: var(--color-cyan);
-    margin-top: 2rem;
+    margin-top: var(--padding-md);
     text-shadow: 0 0 8px var(--color-cyan);
 }
 
@@ -58,18 +56,39 @@
     font-family: 'Share Tech Mono', monospace;
     color: var(--color-green);
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 1rem 2rem;
+    padding: var(--padding-sm) var(--padding-md);
     border: 1px solid var(--color-green);
     border-radius: 8px;
     box-shadow: 0 0 10px var(--color-green);
     white-space: pre;
-    overflow: hidden;
     animation: flicker 1.5s infinite alternate;
     z-index: 1;
 }
 
 .console-effect.glitch {
     animation: shake 0.15s infinite;
+}
+
+.console-effect p {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: none;
+    width: 0;
+}
+
+.console-effect p.hidden {
+    width: 0;
+    border-right: none;
+}
+
+.console-effect p.typing {
+    border-right: 2px solid var(--color-green);
+    animation: typing 1.8s steps(35, end) forwards, blink 0.7s step-end infinite;
+}
+
+.console-effect p.typing-done {
+    border-right: none;
+    width: 100%;
 }
 
 @keyframes glow {
@@ -99,4 +118,14 @@
 @keyframes flicker {
     0% { opacity: 0.6; }
     100% { opacity: 1.2; }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    0%, 100% { border-color: var(--color-green); }
+    50% { border-color: transparent; }
 }

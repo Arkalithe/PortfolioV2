@@ -11,10 +11,6 @@ body, main {
     font-family: 'Share Tech Mono', monospace;
     scroll-behavior: smooth;
 }
-main {
-    height: fit-content;
-}
-
 
 h1, h2, h3, h4 {
     font-family: 'Audiowide', cursive;

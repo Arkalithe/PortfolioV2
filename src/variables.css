@@ -5,4 +5,32 @@
     --color-cyan: #00ffff;
     --color-gold: #ffcc00;
     --color-text: #f0f0f0;
+
+    --base-unit-padding: 1rem;
+    --base-unit-text: 1rem;
+
+    --padding-xs: calc(var(--base-unit-padding) * 0.5);
+    --padding-sm: calc(var(--base-unit-padding) * 1);
+    --padding-mm: calc(var(--base-unit-padding) * 1.5);
+    --padding-md: calc(var(--base-unit-padding) * 2);
+    --padding-lg: calc(var(--base-unit-padding) * 3);
+
+
+    --text-sm: calc(var(--base-unit-text) * 0.875);
+    --text-md: calc(var(--base-unit-text) * 1);
+    --text-lg: calc(var(--base-unit-text) * 1.25);
+}
+
+
+@media (max-width: 1024px) {
+    :root {
+        --base-unit-padding: 0.75rem;
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+        --base-unit-padding: 0.50rem;
+        --base-unit-text: 0.75rem;
+    }
 }
