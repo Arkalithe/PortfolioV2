@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "name": "Welcome i'm Tristan Vigneron",
+    "subtitle": "Code, design and digital aesthetics",
+    "CV": "My Resume",
+    "tagline": "I design complete experiences, from server to screen, turning ideas into interfaces.",
+    "console": [
+      "- Initializing requested information",
+      "- Loading FULL-STACK environment...",
+      "- Backend [OK]",
+      "- Frontend [OK]",
+      "- System ready."
+    ]
+  },
+  "header": {
+    "home": "Home",
+    "project": "Projects",
+    "skills": "Skills",
+    "about": "About",
+    "contact": "Contact"
+  }
+}
