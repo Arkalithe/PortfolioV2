@@ -18,5 +18,24 @@
     "skills": "Skills",
     "about": "About",
     "contact": "Contact"
+  },
+  "about": {
+    "timeline": {
+      "studipro": {
+        "title": "Web & Mobile Developer",
+        "desc": "Studi",
+        "niveau": "Professional Title Level 5 (2-year technical degree )"
+      },
+      "hb": {
+        "title": "Application Developer",
+        "desc": "Human Booster",
+        "niveau": "Professional Title Level 6 (Bachelor’s Degree)"
+      },
+      "digitech": {
+        "title": "Digitech Fusion",
+        "desc": "4-month internship"
+      }
+    }
   }
+
 }

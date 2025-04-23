@@ -18,5 +18,23 @@
     "skills": "Compétences",
     "about": "Bio",
     "contact": "Contact"
+  },
+  "about": {
+    "timeline": {
+      "studipro": {
+        "title": "Développeur Web et Mobile",
+        "desc": "Studi",
+        "niveau": "Titre Pro 5 (Bac+2)"
+      },
+      "hb": {
+        "title": "Concepteur Développeur d’Application",
+        "desc": "Human Booster",
+        "niveau": "Titre Pro 6 (Bac+3/4)"
+      },
+      "digitech": {
+        "title": "Digitech Fusion",
+        "desc": "Stage de 4 mois"
+      }
+    }
   }
 }
