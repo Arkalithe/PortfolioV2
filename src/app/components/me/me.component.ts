@@ -1,8 +1,20 @@
-import {Component, ElementRef, inject, OnInit, Renderer2} from '@angular/core';
+import {
+  Component,
+  effect,
+  ElementRef,
+  inject, Injector,
+  OnDestroy,
+  OnInit,
+  Renderer2,
+  runInInjectionContext,
+  signal
+} from '@angular/core';
+import {TranslateModule, TranslateService} from "@ngx-translate/core";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'section[app-me]',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './me.component.html',
   standalone: true,
   styleUrl: './me.component.css',
@@ -11,24 +23,47 @@ import {Component, ElementRef, inject, OnInit, Renderer2} from '@angular/core';
   }
 })
 export class MeComponent implements OnInit {
+  private injector = inject(Injector);
+  private translate = inject(TranslateService);
   private host = inject(ElementRef<HTMLElement>);
   private renderer = inject(Renderer2);
 
+  consoleLines = signal<string[]>([]);
+
   ngOnInit(): void {
-    this.initConsoleLines();
+    this.loadConsoleLines();
+
+    this.translate.onLangChange.subscribe(() => {
+      this.loadConsoleLines();
+    });
+
     this.startGlitchLoop();
   }
 
-  private initConsoleLines(): void {
-    const lines = this.host.nativeElement.querySelectorAll('.console-effect p') as NodeListOf<HTMLElement>;
-
-    lines.forEach((line) => {
-      this.renderer.addClass(line, 'hidden');
+  private loadConsoleLines(): void {
+    this.translate.get('hero.console').subscribe((lines: string[]) => {
+      this.consoleLines.set([...lines]);
+        this.initConsoleLines();
     });
+  }
+
+  private initConsoleLines(): void {
+    const consoleContainer = this.host.nativeElement.querySelector('.console-effect') as HTMLElement;
+
+    consoleContainer.innerHTML = '';
+
+    this.consoleLines().forEach(line => {
+      const p = this.renderer.createElement('p');
+      const text = this.renderer.createText(line);
+      this.renderer.appendChild(p, text);
+      this.renderer.addClass(p, 'hidden');
+      this.renderer.appendChild(consoleContainer, p);
+    });
+
+    const lines = consoleContainer.querySelectorAll('p');
 
     lines.forEach((line, index) => {
       const delay = index * 2000;
-
       setTimeout(() => {
         this.renderer.removeClass(line, 'hidden');
         this.renderer.addClass(line, 'typing');

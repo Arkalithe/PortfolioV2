@@ -14,11 +14,13 @@
     --padding-mm: calc(var(--base-unit-padding) * 1.5);
     --padding-md: calc(var(--base-unit-padding) * 2);
     --padding-lg: calc(var(--base-unit-padding) * 3);
+    --padding-xg: calc(var(--base-unit-padding) * 4);
 
 
     --text-sm: calc(var(--base-unit-text) * 0.875);
     --text-md: calc(var(--base-unit-text) * 1);
     --text-lg: calc(var(--base-unit-text) * 1.25);
+    --text-xg: calc(var(--base-unit-text) * 3);
 }
 
 

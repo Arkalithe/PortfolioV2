@@ -16,3 +16,19 @@
     gap: var(--padding-mm);
     padding: var(--padding-sm) var(--padding-md);
 }
+
+.title {
+    font-size: var(--text-xg);
+    font-family: 'Audiowide', cursive;
+    color: var(--color-violet);
+    text-shadow: 0 0 10px var(--color-violet);
+    margin-bottom: var(--padding-sm);
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+}
+
+
+@keyframes glow {
+    from { text-shadow: 0 0 0 var(--color-violet); }
+    to { text-shadow: 0 0 20px var(--color-violet); }
+}

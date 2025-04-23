@@ -1,13 +1,7 @@
-<app-header-toogle (headerModeChanged)="onHeaderToggle($event)"></app-header-toogle>
-
-@if (isVertical(); as vertical) {
-    <nav app-header-vertical></nav>
-} @else {
-    <nav app-header-horizontal></nav>
-}
-
+<nav app-header-horizontal></nav>
 <main>
 <router-outlet />
-</main>
+    <app-lang-toggle class="lang-switcher"></app-lang-toggle>
 
+</main>
 <footer app-footer></footer>

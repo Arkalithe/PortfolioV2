@@ -16,7 +16,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/portfolio",
+            "outputPath": "dist/portfolio/browser",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -26,7 +26,13 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": ""
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
               }
             ],
             "styles": [
@@ -36,6 +42,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/PortfolioVigneronTristan/",
               "budgets": [
                 {
                   "type": "initial",
@@ -84,7 +91,13 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": ""
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
               }
             ],
             "styles": [

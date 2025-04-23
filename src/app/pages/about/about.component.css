@@ -1,0 +1,129 @@
+:host {
+    margin-bottom: var(--padding-xg);
+}
+
+.timeline-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.timeline-title {
+    font-size: 1.3rem;
+    color: var(--color-cyan);
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 8px var(--color-cyan);
+}
+
+.timeline-column {
+    position: relative;
+    flex: 1 1 45%;
+    min-width: 300px;
+    height: 400px;
+
+}
+
+.timeline-bar {
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--color-green);
+    box-shadow: 0 0 8px var(--color-green);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.event-block {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.event-block.left {
+    left: 0;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.event-block.right {
+    left: 50%;
+}
+
+.event-block .line {
+    height: 2px;
+    width: 40px;
+    background: var(--color-green);
+    box-shadow: 0 0 8px var(--color-green);
+    flex-shrink: 0;
+}
+
+.event-block .dot {
+    min-width: var(--padding-mm);
+    min-height: var(--padding-mm);
+    background: var(--color-cyan);
+    border-radius: 50%;
+    box-shadow: 0 0 12px var(--color-cyan);
+    margin: 0;
+}
+
+
+.info {
+    margin-inline: var(--padding-xs);
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    font-size: var(--text-md);
+    color: var(--color-gold);
+    text-shadow: 0 0 4px var(--color-gold);
+}
+
+.info-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.2rem;
+}
+
+
+.info-title {
+    font-size: var(--text-md);
+    margin-top: 0.1rem;
+}
+
+.info-desc {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .timeline-wrapper {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .timeline-column {
+        height: auto;
+    }
+
+    .event-block {
+        position: relative;
+        width: 100%;
+        justify-content: flex-start;
+        margin: 2rem 0;
+    }
+
+    .event-block.left,
+    .event-block.right {
+        left: auto;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .timeline-bar {
+        left: 0.5rem;
+        transform: none;
+    }
+}

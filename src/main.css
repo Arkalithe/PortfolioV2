@@ -12,10 +12,25 @@ body, main {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Audiowide', cursive;
-    color: var(--color-violet);
-    text-shadow: 0 0 10px var(--color-violet);
+section {
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: auto;
 }
 
 
+@media (max-width: 1024px) {
+section {
+    max-width: 95vw;
+    max-height: 100vh;
+    margin: auto;
+}
+}
+
+@media (max-width: 640px) {
+    section {
+        max-width: 95vw;
+        max-height: 100vh;
+        margin: auto;
+    }
+}

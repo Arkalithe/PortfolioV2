@@ -1,1 +1,47 @@
-<p>about works!</p>
+<h1 class="title">À propos</h1>
+
+<div class="timeline-wrapper">
+    <div class="timeline-column">
+        <h2 class="timeline-title">Éducation</h2>
+        <div class="timeline-bar"></div>
+
+        @for (entry of timeline(); track entry) {
+            @if (entry.type === 'education') {
+                <div class="event-block {{ entry.side }}" [style.top.%]="entry.position">
+                    <div class="line"></div>
+                    <div class="dot"></div>
+                    <div class="info">
+                        <div class="info-header">
+                            <span class="info-title">{{ entry.title }}</span>
+                            <span>{{ entry.year }}</span>
+                        </div>
+                        <div>
+                            <p class="info-desc">{{ entry.description }}</p>
+                            <p class="info-desc">{{ entry.niveau }}</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    <div class="timeline-column">
+        <h2 class="timeline-title">Expérience</h2>
+        <div class="timeline-bar"></div>
+        @for (entry of timeline(); track entry) {
+            @if (entry.type === 'experience') {
+                <div class="event-block {{ entry.side }}" [style.top.%]="entry.position">
+                    <div class="line"></div>
+                    <div class="dot"></div>
+                    <div class="info">
+                        <div class="info-header">
+                            <span class="info-title">{{ entry.title }}</span>
+                            <span class="info-year">{{ entry.year }}</span>
+                        </div>
+                        <p class="info-desc">{{ entry.description }}</p>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

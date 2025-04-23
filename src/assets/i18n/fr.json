@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "name": "Bienvenue, je suis Tristan Vigneron",
+    "subtitle": "Code, design et esthétique numérique",
+    "CV": "CV",
+    "tagline": "Je vous conçois des expériences complètes, du serveur à l'écran, en transformant vos idées et vos besoins en interfaces.",
+    "console": [
+      "- Initialisation des Information Demandées",
+      "- Chargement de l'environnement FULL-STACK...",
+      "- Backend [OK]",
+      "- Frontend [OK]",
+      "- Système prêt."
+    ]
+  },
+  "header": {
+    "home": "Acceuil",
+    "project": "Projets",
+    "skills": "Compétences",
+    "about": "Bio",
+    "contact": "Contact"
+  }
+}

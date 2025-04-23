@@ -2,12 +2,11 @@ import {Component, signal} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderHorizontalComponent } from './components/header-horizontal/header-horizontal.component';
-import { HeaderVerticalComponent } from './components/header-vertical/header-vertical.component';
-import { HeaderToogleComponent } from './components/header-toogle/header-toogle.component';
+import {LangToggleComponent} from "./components/lang-togle/lang-toggle.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderToogleComponent, HeaderVerticalComponent, HeaderHorizontalComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderHorizontalComponent, FooterComponent, LangToggleComponent],
   templateUrl: './app.component.html',
   standalone: true,
   styleUrl: './app.component.css'
