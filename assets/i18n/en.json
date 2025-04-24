@@ -20,6 +20,13 @@
     "contact": "Contact"
   },
   "about": {
+      "about": "About Me",
+      "intro": {
+        "hello": "I'm Tristan Vigneron, a passionate software developer with a strong interest in video games and a deep love for crafting sleek digital experiences.",
+        "path": "After several years working in the world of pastry, I decided to challenge myself with a new journey — programming.",
+        "strengths": "I specialize in modern front-end development using Angular and TypeScript, where I focus on creating clean, scalable interfaces with a strong emphasis on user experience. On the backend, I work with Node.js and Express to build fast, efficient APIs, and I've also developed applications using Java with Spring Boot. Additionally, I have experience with PHP and Symfony. I thrive in the JavaScript ecosystem, where flexibility, creativity, and technical depth intersect."
+    },
+    "timelineTitle": "Timeline",
     "timeline": {
       "studipro": {
         "title": "Web & Mobile Developer",
@@ -36,6 +43,9 @@
         "desc": "4-month internship"
       }
     }
-  }
+  },
+  "skills": {
+    "title": "Skills"
+}
 
 }

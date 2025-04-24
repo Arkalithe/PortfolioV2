@@ -20,6 +20,13 @@
     "contact": "Contact"
   },
   "about": {
+    "about": "À propos de moi",
+    "intro": {
+      "hello": "Je suis Tristan Vigneron, un développeur passionné avec un fort intérêt pour les jeux vidéo et une envie profonde de créer des expériences numériques élégantes.",
+      "path": "Après plusieurs années passées dans le domaine de la pâtisserie, j’ai décidé de relever un nouveau défi : la programmation.",
+      "strengths": "Je me spécialise dans le développement front-end moderne avec Angular et TypeScript, en créant des interfaces propres, modulaires et centrées sur l’utilisateur. Côté back-end, j’utilise Node.js et Express pour construire des API rapides et robustes, et j’ai également développé des applications avec Java et Spring Boot. J’ai aussi de l’expérience avec PHP et Symfony. L’écosystème JavaScript est celui dans lequel je m’épanouis pleinement."
+    },
+    "timelineTitle": "Parcours",
     "timeline": {
       "studipro": {
         "title": "Développeur Web et Mobile",
@@ -36,5 +43,7 @@
         "desc": "Stage de 4 mois"
       }
     }
-  }
+  },
+  "skills": {
+    "title": "Compétence"}
 }
