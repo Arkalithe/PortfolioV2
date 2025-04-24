@@ -1,7 +1,23 @@
 :host {
+    display: flex;
+    flex-direction: column;
     margin-bottom: var(--padding-xg);
+    margin-top: var(--padding-xg);
 }
 
+.about-intro {
+    margin: auto;
+    margin-block: var(--padding-mm);
+    padding: 0 1rem;
+    max-width: 800px;
+}
+
+.about-paragraph {
+    font-size: var(--text-md);
+    color: var(--color-gold);
+    text-shadow: 0 0 4px var(--color-gold);
+    margin-bottom: 1rem;
+}
 .timeline-wrapper {
     display: flex;
     justify-content: space-between;
@@ -29,8 +45,8 @@
     left: 50%;
     width: 2px;
     height: 100%;
-    background: var(--color-green);
-    box-shadow: 0 0 8px var(--color-green);
+    background: var(--color-pink);
+    box-shadow: 0 0 8px var(--color-pink);
     transform: translateX(-50%);
     z-index: 1;
 }
@@ -56,8 +72,8 @@
 .event-block .line {
     height: 2px;
     width: 40px;
-    background: var(--color-green);
-    box-shadow: 0 0 8px var(--color-green);
+    background: var(--color-pink);
+    box-shadow: 0 0 8px var(--color-pink);
     flex-shrink: 0;
 }
 

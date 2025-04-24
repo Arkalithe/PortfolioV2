@@ -1,6 +1,6 @@
 .links {
-    color: var(--color-green);
-    text-shadow: 0 0 5px var(--color-green);
+    color: var(--color-pink);
+    text-shadow: 0 0 5px var(--color-pink);
     transition: color 0.3s, text-shadow 0.3s;
     font-weight: bold;
 }

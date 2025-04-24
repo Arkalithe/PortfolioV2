@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import {MeComponent} from "../../components/me/me.component";
-import {AboutComponent} from "../about/about.component";
+import {AboutComponent} from "../../components/about/about.component";
 import {ProjectComponent} from "../project/project.component";
+import {SkillsComponent} from "../../components/skills/skills.component";
 
 @Component({
   selector: 'app-home',
     imports: [
         MeComponent,
         AboutComponent,
-        ProjectComponent
+        ProjectComponent,
+        SkillsComponent
     ],
   templateUrl: './home.component.html',
   standalone: true,

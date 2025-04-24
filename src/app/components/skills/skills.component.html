@@ -1,0 +1,16 @@
+<h1 class="title">{{ 'skills.title' | translate }}</h1>
+
+@for (group of skillGroups(); track group) {
+    <div class="skill-section">
+        <h2 class="skill-category">{{ group.category }}</h2>
+        <div class="skill-list">
+            @for (skill of group.skills; track skill) {
+                <app-card-skills
+                        [name]="skill.name"
+                        [icon]="skill.icon"
+                        [level]="skill.level"
+                />
+            }
+        </div>
+    </div>
+}

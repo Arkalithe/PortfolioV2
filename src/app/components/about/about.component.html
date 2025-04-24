@@ -1,10 +1,24 @@
+<h1 class="title">{{ 'about.about' | translate}} </h1>
+
+<div class="about-intro">
+    <p class="about-paragraph">
+        {{ 'about.intro.hello' | translate }}
+    </p>
+    <p class="about-paragraph">
+        {{ 'about.intro.path' | translate }}
+    </p>
+    <p class="about-paragraph">
+        {{ 'about.intro.strengths' | translate }}
+    </p>
+</div>
+
 <div class="timeline-wrapper">
     <div class="timeline-column">
-        <h2 class="timeline-title">header.education'</h2>
+        <h2 class="timeline-title">{{ 'about.timelineTitle' | translate }}</h2>
         <div class="timeline-bar"></div>
 
         @for (entry of timeline(); track entry) {
-            @if (entry.type === 'education') {
+            @if (entry.type === 'education' || 'experience') {
                 <div class="event-block {{ entry.side }}" [style.top.%]="entry.position">
                     <div class="line"></div>
                     <div class="dot"></div>
@@ -15,29 +29,10 @@
                         </div>
                         <div>
                             <p class="info-desc">{{ 'about.timeline.' + entry.key + '.desc' | translate }}</p>
+                            @if(entry.type  === 'education') {
                             <p class="info-desc">{{ 'about.timeline.' + entry.key + '.niveau' | translate }}</p>
+                            }
                         </div>
-                    </div>
-                </div>
-            }
-        }
-    </div>
-
-    <div class="timeline-column">
-        <h2 class="timeline-title">Experience</h2>
-        <div class="timeline-bar"></div>
-
-        @for (entry of timeline(); track entry) {
-            @if (entry.type === 'experience') {
-                <div class="event-block {{ entry.side }}" [style.top.%]="entry.position">
-                    <div class="line"></div>
-                    <div class="dot"></div>
-                    <div class="info">
-                        <div class="info-header">
-                            <span class="info-title">{{ 'about.timeline.' + entry.key + '.title' | translate }}</span>
-                            <span>{{ entry.year }}</span>
-                        </div>
-                        <p class="info-desc">{{ 'about.timeline.' + entry.key + '.desc' | translate }}</p>
                     </div>
                 </div>
             }

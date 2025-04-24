@@ -14,15 +14,14 @@ body, main {
 
 section {
     max-width: 90vw;
-    max-height: 90vh;
-    margin: auto;
+    margin-inline: auto;
+    margin-block: var(--padding-xg);
 }
 
 
 @media (max-width: 1024px) {
 section {
     max-width: 95vw;
-    max-height: 100vh;
     margin: auto;
 }
 }
@@ -30,7 +29,6 @@ section {
 @media (max-width: 640px) {
     section {
         max-width: 95vw;
-        max-height: 100vh;
         margin: auto;
     }
 }

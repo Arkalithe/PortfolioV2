@@ -1,11 +1,12 @@
 :host {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
+    margin-block: 0;
 }
 
 :host p {
@@ -38,13 +39,13 @@
 .console-effect {
     position: relative;
     font-family: 'Share Tech Mono', monospace;
-    color: var(--color-green);
+    color: var(--color-pink);
     background-color: rgba(0, 0, 0, 0.2);
     padding: var(--padding-sm) var(--padding-md);
     margin-top: var(--padding-md);
-    border: 1px solid var(--color-green);
+    border: 1px solid var(--color-pink);
     border-radius: 8px;
-    box-shadow: 0 0 10px var(--color-green);
+    box-shadow: 0 0 10px var(--color-pink);
     white-space: pre;
     animation: flicker 1.5s infinite alternate;
     z-index: 1;
@@ -67,7 +68,7 @@
 }
 
 .console-effect p.typing {
-    border-right: 2px solid var(--color-green);
+    border-right: 2px solid var(--color-pink);
     animation: typing 1.8s steps(35, end) forwards, blink 0.7s step-end infinite;
 }
 
@@ -106,6 +107,6 @@
 }
 
 @keyframes blink {
-    0%, 100% { border-color: var(--color-green); }
+    0%, 100% { border-color: var(--color-pink); }
     50% { border-color: transparent; }
 }

@@ -1,0 +1,12 @@
+<div class="skill-card">
+    <div class="skill-header">
+        <img [ngSrc]="'assets/icons/' + icon()" [alt]="name() + ' icon'" class="skill-icon" width="24" height="24" />
+        <span class="skill-name">{{ name() }}</span>
+    </div>
+
+    <div class="skill-meter">
+        @for (step of steps(); track step) {
+            <span class="meter-step" [class.filled]="step === 1"></span>
+        }
+    </div>
+</div>
