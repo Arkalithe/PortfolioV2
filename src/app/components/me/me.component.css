@@ -1,9 +1,10 @@
 :host {
-    height: 80vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     position: relative;
     overflow: hidden;
     margin-block: 0;
@@ -38,6 +39,7 @@
 
 .console-effect {
     position: relative;
+    text-align: start;
     font-family: 'Share Tech Mono', monospace;
     color: var(--color-pink);
     background-color: rgba(0, 0, 0, 0.2);

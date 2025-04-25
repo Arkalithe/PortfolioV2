@@ -1,11 +1,12 @@
 :root {
-    --color-bg: #0f0f0f;
-    --color-card: #1616df;
-    --color-violet: #8a2be2;
-    --color-pink: #ff1476;
-    --color-cyan: #00ffff;
-    --color-gold: #ffcc00;
-    --color-text: #f0f0f0;
+    /*--color-bg: transparent;*/
+    --color-bg: #000000;
+    --color-card: hsl(240, 82%, 48%);
+    --color-violet: hsl(271, 76%, 53%);
+    --color-pink: hsl(335, 100%, 54%);
+    --color-cyan: hsl(180, 100%, 50%);
+    --color-gold: hsl(48, 100%, 50%);
+    --color-text: hsl(0, 0%, 94%);
 
     --base-unit-padding: 1rem;
     --base-unit-text: 1rem;
@@ -14,6 +15,7 @@
     --padding-sm: calc(var(--base-unit-padding) * 1);
     --padding-mm: calc(var(--base-unit-padding) * 1.5);
     --padding-md: calc(var(--base-unit-padding) * 2);
+    --padding-mlg: calc(var(--base-unit-padding) * 2.5);
     --padding-lg: calc(var(--base-unit-padding) * 3);
     --padding-xg: calc(var(--base-unit-padding) * 4);
 

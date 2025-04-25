@@ -1,7 +1,9 @@
 <h1 class="title">{{ 'hero.name' | translate }}</h1>
 <p class="cyber-tagline"> {{ 'hero.tagline' | translate }}</p>
 <p class="subtitle">{{ 'hero.subtitle' | translate }}</p>
-<div> <button>{{ 'hero.CV' | translate }}</button> <button>{{ 'header.project' | translate }}</button> </div>
+<div class="nav-links">
+    <button class="links">{{ 'hero.CV' | translate }}</button>
+</div>
 <div class="console-effect">
         @for (line of consoleLines(); track line) {
             <p >{{ line }}</p>

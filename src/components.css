@@ -1,18 +1,46 @@
 .links {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
     color: var(--color-pink);
     text-shadow: 0 0 5px var(--color-pink);
+    box-shadow: inset 0 0 0.5em 0 var(--color-pink), 0 0 0.5em 0 var(--color-pink);
+    border: 0.125em solid var(--color-pink);
+    border-radius: 0.25em;
     transition: color 0.3s, text-shadow 0.3s;
     font-weight: bold;
+    position: relative;
+    padding: var(--padding-xs);
 }
 
-.links:hover {
-    color: var(--color-cyan);
-    text-shadow: 0 0 8px var(--color-cyan);
+.links::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--color-pink);
+    opacity: 0;
+    background-color: var(--color-pink);
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+
+.links:hover, links:focus {
+    background: var(--color-pink);
+    color: var(--color-bg);
+    text-shadow: 0 0 8px var(--color-bg);
+}
+
+.links:hover::after, links:focus::after {
+opacity: 1;
 }
 
 .nav-links {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: var(--padding-mm);
     padding: var(--padding-sm) var(--padding-md);
 }
@@ -26,6 +54,7 @@
     animation: glow 2s ease-in-out infinite alternate;
     text-align: center;
 }
+
 
 
 @keyframes glow {

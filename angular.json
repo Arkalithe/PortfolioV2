@@ -42,7 +42,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/PortfolioVigneronTristan/",
+              "baseHref": "/PortfolioV2/",
               "budgets": [
                 {
                   "type": "initial",
@@ -109,7 +109,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/PortfolioVigneronTristan/"
+            "baseHref": "/PortfolioV2/"
           }
         }
       }
