@@ -1,12 +1,10 @@
 import {Component, inject, signal} from '@angular/core';
-import {NgOptimizedImage} from "@angular/common";
 import {CardSkillsComponent} from "../card-skills/card-skills.component";
 import {TranslateModule, TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'section[app-skills]',
   imports: [
-    NgOptimizedImage,
     CardSkillsComponent,
     TranslateModule
   ],
@@ -23,13 +21,12 @@ export class SkillsComponent {
     {
       category: 'Languages',
       skills: [
-        { name: 'Html', icon: 'html-5.svg', level: 3 },
-        { name: 'Css', icon: 'css.svg', level: 3 },
-
-        { name: 'TypeScript', icon: 'typescript.svg', level: 3 },
+        { name: 'Html', icon: 'html-5.svg', level: 4 },
+        { name: 'Css', icon: 'css.svg', level: 4 },
         { name: 'JavaScript', icon: 'javascript.svg', level: 3 },
+        { name: 'TypeScript', icon: 'typescript.svg', level: 3 },
         { name: 'Java', icon: 'java.svg', level: 2 },
-        { name: 'PHP', icon: 'php.svg', level: 1 },
+        { name: 'PHP', icon: 'php.svg', level: 2 },
       ],
     },
     {
@@ -43,7 +40,7 @@ export class SkillsComponent {
       category: 'Backend',
       skills: [
         { name: 'Node.js', icon: 'node-js.svg', level: 3 },
-        { name: 'Spring Boot', icon: 'spring.svg', level: 3 },
+        { name: 'Spring Boot', icon: 'spring.svg', level: 2 },
         { name: 'Express.js', icon: 'express.svg', level: 2 },
         { name: 'Symfony.js', icon: 'symfony.svg', level: 1 },
       ],

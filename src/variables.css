@@ -1,7 +1,9 @@
 :root {
     /*--color-bg: transparent;*/
     --color-bg: #000000;
-    --color-card: hsl(240, 82%, 48%);
+    --color-card: linear-gradient(135deg, var(--color-card1),var(--color-card2));
+    --color-card1: hsl(262, 94%, 28%);
+    --color-card2: hsl(264, 48%, 11%);
     --color-violet: hsl(271, 76%, 53%);
     --color-pink: hsl(335, 100%, 54%);
     --color-cyan: hsl(180, 100%, 50%);

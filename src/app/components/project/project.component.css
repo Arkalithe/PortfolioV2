@@ -1,0 +1,25 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: var(--padding-md);
+}
+
+.column-title {
+    font-size: var(--text-lg);
+    color: var(--color-cyan);
+    margin-bottom: var(--padding-md);
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--padding-sm);
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

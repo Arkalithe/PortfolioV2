@@ -5,7 +5,7 @@
     </div>
 
     <div class="skill-meter">
-        @for (step of steps(); track step) {
+        @for (step of steps(); track $index) {
             <span class="meter-step" [class.filled]="step === 1"></span>
         }
     </div>

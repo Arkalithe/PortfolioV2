@@ -1,0 +1,58 @@
+.project-card {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 350px;
+    background: var(--color-card);
+    border: 1px solid var(--color-cyan);
+    border-radius: var(--padding-mm);
+    padding: var(--padding-sm);
+    gap: var(--padding-xs);
+    transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 0 10px var(--color-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: var(--padding-sm);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--padding-xs);
+    margin-bottom: var(--padding-sm);
+}
+
+.tag {
+    background: var(--color-cyan);
+    padding: var(--padding-xs) var(--padding-xs);
+    border-radius: 0.5rem;
+    font-size: var(--text-sm);
+    color: var(--color-bg);
+    font-weight: bold;
+}
+
+.project-title {
+    font-size: var(--text-lg);
+}
+
+.project-description, .project-title {
+    color: var(--color-gold);
+
+}
+
+.links.disabled {
+    background: black;
+    cursor: not-allowed;
+    pointer-events: none;
+    border: none;
+    box-shadow: none;
+}

@@ -1,1 +1,20 @@
-<p>card-project works!</p>
+<div class="project-card">
+    <h3 class="project-title">{{ project.title | translate }}</h3>
+    <p class="project-description">{{ project.year | date:'yyyy' }}</p>
+    <div class="project-image" ></div>
+    <p class="project-description">{{ project.description | translate }}</p>
+    <div class="project-tags">
+        @for (tag of project.tags; track tag) {
+            <span class="tag">{{ tag }}</span>
+        }
+    </div>
+    @if (project.link) {
+        <a [href]="project.link" target="_blank" class="links">
+            {{ 'header.project' | translate }}
+        </a>
+    } @else {
+        <span class="links disabled">
+    {{ 'projects.unavailable' | translate }}
+  </span>
+    }
+</div>

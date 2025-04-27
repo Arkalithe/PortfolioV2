@@ -13,7 +13,7 @@ Fait entièrement en CSS sans aucun framework graphique.
 
 Ce projet est automatiquement déployé sur GitHub Pages depuis la branche `main` via GitHub Actions.
 
-🔗 Accès au site :  🌐 [arkalithe.github.io/PortfolioVigneronTristan](https://arkalithe.github.io/PortfolioVigneronTristan/)
+🔗 Accès au site :  🌐 [arkalithe.github.io/PortfolioV2](https://arkalithe.github.io/PortfolioV2/)
 
 
 ## 🛠️ Tech Stack
@@ -34,14 +34,6 @@ src/
 │  
 └── assets/
 ```
-
-## Contact :
-
-- 📬 Email : [tristan.vigneron@email.com](mailto:tristan.vigneron@email.com)
-- 💼 LinkedIn : [linkedin.com/in/tristanvigneron](https://www.linkedin.com/in/tristanvigneron)
-- 💻 GitHub : [github.com/Arkalithe](https://github.com/Arkalithe)
-- 
-
 
 > © Tristan Vigneron — 2025  
 > Licence : [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)  

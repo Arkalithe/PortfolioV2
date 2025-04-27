@@ -45,5 +45,33 @@
     }
   },
   "skills": {
-    "title": "Compétence"}
+    "title": "Compétence"
+  },
+  "projects": {
+    "unavailable": "(Projet non déployé)",
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Mon propre portfolio Angular 19 réalisé uniquement en CSS."
+  },
+  "garage": {
+    "title": "Garage V.Parrot",
+    "description": "Site vitrine pour un garage réalisé dans le cadre du titre professionnel Développeur Web et Mobile."
+  },
+  "borne": {
+    "title": "Electric Business",
+    "description": "Site de partage de bornes électriques développé dans le cadre du titre professionnel Concepteur Développeur d’Application."
+  },
+  "localIa": {
+    "title": "Ubya",
+    "description": "Back-office pour un site de vente de box d'IA locales."
+  },
+  "game": {
+    "title": "Jeu de Plateforme",
+    "description": "Jeu de platfrome sur navigateur, utilisant Canvas."
+  },
+  "dice": {
+      "title": "Jeu de Dé",
+      "description": "Jeu de dé sur navigateur en JS."
+    }
+}
 }

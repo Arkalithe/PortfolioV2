@@ -1,1 +1,22 @@
-<h1 class="title">Projets</h1>
+<h2 class="title">Mes Projets</h2>
+
+<div class="projects-grid">
+    <div class="project-column">
+        <h3 class="column-title">Projets Pro / Formation</h3>
+        <div class="project-list">
+            @for (project of proProjects(); track project.id) {
+                <app-card-project [project]="project"></app-card-project>
+            }
+        </div>
+    </div>
+
+    <div class="project-column">
+        <h3 class="column-title">Projets Perso</h3>
+        <div class="project-list">
+            @for (project of personalProjects(); track project.id) {
+                <app-card-project [project]="project"></app-card-project>
+            }
+        </div>
+    </div>
+</div>
+
