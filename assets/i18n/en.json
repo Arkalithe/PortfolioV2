@@ -46,6 +46,33 @@
   },
   "skills": {
     "title": "Skills"
-}
+},
+  "projects": {
+    "unavailable": "(Project not deployed)",
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "My personal Angular 19 portfolio created entirely with CSS."
+    },
+    "garage": {
+      "title": "Garage V.Parrot",
+      "description": "Showcase website for a garage, developed during the Web and Mobile Developer professional certification."
+    },
+    "borne": {
+      "title": "Electric Business",
+      "description": "Electric charging station sharing platform, developed during the Application Developer certification program."
+    },
+    "localIa": {
+      "title": "Ubya",
+      "description": "Back-office for a website selling local AI boxes."
+    },
+    "game": {
+      "title": "Platformer Game",
+      "description": "Platformer browser game using Canvas."
+    },
+    "dice": {
+      "title": "Dice Game",
+      "description": "Dice browser Game using JS."
+    }
+  }
 
 }
